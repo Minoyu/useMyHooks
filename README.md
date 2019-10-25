@@ -9,3 +9,7 @@
 ## 目前归纳的 Hooks
 
 - [useDocumentTitle](./useDocumentTitle/) 一个方便更新页面`title`的小钩子
+- [useBooleanState](./useBooleanState/) 论如何优雅的管理 `boolean` 状态
+- [useInput](./useInput/) 借助 Hook 来优雅的实现 `input` 输入
+
+## PR is welcome~
