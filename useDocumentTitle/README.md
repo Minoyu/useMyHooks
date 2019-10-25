@@ -16,7 +16,7 @@ const Demo = () => {
     setIsLoading(false);
     ......
 
-    return <div>{isLoading ? "加载中" : "加载已完成" }</div>;
+    return (<div>{isLoading ? "加载中" : "加载已完成" }</div>);
 };
 ```
 
