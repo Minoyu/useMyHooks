@@ -13,9 +13,9 @@ const Demo = () => {
     const [str,setStr] = useState("");
     .....
     // 此处value为供input临时显示的值
-    const [value, handleChange] = useValidInput({
+    const [value, handleChange, handleBlur] = useValidInput({
         value:"不含空格的字符串",
-        isValid:!(/\s+/g).test(value),
+        isValid:(value) => !(/\s+/g).test(value),
         toValid: (value) => value.replace(validNameReg, ""),
         setValue: (value) => setStr(value),
         // 如不需要每次change都进行验证可设置为false,仅 onBlur 时验证
@@ -25,7 +25,7 @@ const Demo = () => {
 
     return (
         <div>
-            <input type="text" value={value} onChange={handleChange}/>
+            <input type="text" value={value} onChange={handleChange} onBlur={handleBlur}/>
             <div>当前已验证的字符串结果为 {str}</div>
         </div>
         );

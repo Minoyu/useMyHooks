@@ -11,5 +11,7 @@
 - [useDocumentTitle](./useDocumentTitle/) 一个方便更新页面 `title` 的小钩子
 - [useBooleanState](./useBooleanState/) 论如何优雅的管理 `boolean` 状态
 - [useInput](./useInput/) 借助 Hook 来优雅的实现 `input` 输入
-
+- [useValidInput](./useValidInput/) `input` 带验证更正的输入框逻辑
+- [useValidNumberInput](./useValidNumberInput/) 基于 `useValidInput` 封装的带验证更正的数字输入框逻辑
+  
 ## PR is welcome~
